@@ -1,7 +1,9 @@
-Feature: Test feature
+Feature: As a user i register into BuggyCarsRating website and then log into it
+  and I wanted to make sure all the details in the web pages are correct
+  so that I can confirm user registration is successful and the details in the web pages are correct.
 
   @TestCase1
-  Scenario Outline: This is the test scenario
+  Scenario Outline: Verify BuggyCarsRating Website registration
 
   Given User is on the BuggyCarsRating Website Registration page <actualTitle>
   When he enters all required registration fields <Username>,<Firstname>,<Lastname>,<Password>
@@ -10,7 +12,7 @@ Feature: Test feature
 
   Examples:
    |Username|Password  |Firstname|Lastname|ExpectedMsg|actualTitle|
-   |Peter123|Qwerty@123|testfirst|testlast|Registration is successful|Buggy Cars Rating|
+   |Debra020|Qwerty@123|testfirst|testlast|Registration is successful|Buggy Cars Rating|
 
   @TestCase2
   Scenario Outline: Verify Lamborghini models and get their Rank Votes and Comments
@@ -34,7 +36,7 @@ Feature: Test feature
 
     Examples:
       |Username|Password  |ExpectedPouplarModel|ExpectedSpecs                 |ExpectedVotes|
-      |Jhon123 |Welly@12345|Lamborghini Diablo |Engine: 6.0l Max Speed: 25km/h|Votes: 1067  |
+      |Jhon123 |Welly@12345|Lamborghini Diablo |Engine: 6.0l Max Speed: 25km/h|Votes: 1075  |
 
   @TestCase4
   Scenario Outline: Verify list of all registered models with overall rating
@@ -47,6 +49,7 @@ Feature: Test feature
     Examples:
       |Username|Password  |ExpectedRating|
       |Jhon123 |Welly@12345|List of all registered models.|
+
   @TestCase5
   Scenario Outline: Verify Zonda model under Pagani Make category in overall rating
 
@@ -57,6 +60,6 @@ Feature: Test feature
 
     Examples:
       |Username|Password  |ExpectedSpecs                  |ExpectedVotes|
-      |Jhon123 |Welly@12345|Engine: 6.0l Max Speed: 350km/h|Votes: 796   |
+      |Jhon123 |Welly@12345|Engine: 6.0l Max Speed: 350km/h|Votes: 798   |
 
 

@@ -12,7 +12,7 @@ Feature: As a user i register into BuggyCarsRating website and then log into it
 
   Examples:
    |Username|Password  |Firstname|Lastname|ExpectedMsg|actualTitle|
-   |Debra009|Qwerty@123|testfirst|testlast|Registration is successful|Buggy Cars Rating|
+   |Debra020|Qwerty@123|testfirst|testlast|Registration is successful|Buggy Cars Rating|
 
   @TestCase2
   Scenario Outline: Verify Lamborghini models and get their Rank Votes and Comments
@@ -36,7 +36,7 @@ Feature: As a user i register into BuggyCarsRating website and then log into it
 
     Examples:
       |Username|Password  |ExpectedPouplarModel|ExpectedSpecs                 |ExpectedVotes|
-      |Jhon123 |Welly@12345|Lamborghini Diablo |Engine: 6.0l Max Speed: 25km/h|Votes: 1067  |
+      |Jhon123 |Welly@12345|Lamborghini Diablo |Engine: 6.0l Max Speed: 25km/h|Votes: 1075  |
 
   @TestCase4
   Scenario Outline: Verify list of all registered models with overall rating
@@ -60,6 +60,6 @@ Feature: As a user i register into BuggyCarsRating website and then log into it
 
     Examples:
       |Username|Password  |ExpectedSpecs                  |ExpectedVotes|
-      |Jhon123 |Welly@12345|Engine: 6.0l Max Speed: 350km/h|Votes: 796   |
+      |Jhon123 |Welly@12345|Engine: 6.0l Max Speed: 350km/h|Votes: 798   |
 
 
